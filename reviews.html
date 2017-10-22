@@ -1,0 +1,78 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>ShopGenie</title>
+    <meta name="description" content="ShopGenie">
+    <meta name="author" content="ShopGenie">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+<style>
+    body {
+        font-family: 'Roboto Condensed', sans-serif;
+    }
+    .wrap-below-1024 {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .key-benefits {
+        flex: 0 1 300px;
+        background-color: #f8f8f8;
+        padding: 20px;
+        text-align: center;
+        border: 1px solid #e1e1e1;
+        margin: 20px;
+        border-radius: 5px;
+    }
+    .key-benefits > h3 {
+        font-size: 32px;
+        color: darkslategray;
+    }
+    .key-benefits > p {
+        border-color: #e1e1e1
+    }
+    .key-benefits > p > .review {
+        mix-blend-mode: multiply;
+    }
+</style>
+</head>
+
+<body style="margin:0;padding-top:50px">
+<script>
+    $(document).ready(function () {
+
+            var options = {
+                "direction": "down"
+            };
+            $("#ratings-img").effect("slide", options, 500);
+            $(".key-benefits").hide();
+            setTimeout(function(){ $(".key-benefits").effect("slide", options, 500); }, 1000)
+        });
+</script>
+      
+
+            <h3 style="text-align:center;margin:0 auto;font-size: 32px;">SoundSport Free Wireless Headphones</h3>
+            <div style="margin:0 auto; text-align:center;width:100%"><img id="ratings-img"  src="https://emilytlam.com/ShopGenie/ratings.jpg"></div>
+
+    <div class="wrap-below-1024" style="display: flex; flex-flow: row wrap; justify-content: center; align-content: center;">
+        <div class="key-benefits">
+            <p><img class="review" src="https://emilytlam.com/ShopGenie/qc35.jpg"></p>
+        </div>
+        <div class="key-benefits">
+                <p><img class="review" src="https://emilytlam.com/ShopGenie/mostcrit.jpg"></p>
+            </div>
+    </div>
+</body>
+</html>

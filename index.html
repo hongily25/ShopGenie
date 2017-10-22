@@ -8,6 +8,9 @@
     <title>ShopGenie</title>
     <meta name="description" content="ShopGenie">
     <meta name="author" content="ShopGenie">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 
 
     <!--[if lt IE 9]>
@@ -15,10 +18,30 @@
   <![endif]-->
 </head>
 
-<body style="margin:0">
-    <div style="display: flex;justify-content: flex-start;background-color: #979595;">
-        <img src="http://emilytlam.com/ShopGenie/Layout4.gif" style="box-shadow: 2px 0px 2px 0px #817f7f">
-        <img src="https://emilytlam.com/ShopGenie/HeadphonesRight2.jpg" style="margin: 0 auto;">
+<body style="margin:0;overflow:hidden;">
+<script>
+    $(document).ready(function () {
+        $("#effect-container").hide();
+        $('#layout').attr('src', 'http://emilytlam.com/ShopGenie/Layout4.gif');
+        $('#layout').attr('style',
+            'box-shadow: 2px 0px 2px 0px #817f7f;height:100vh;display:inline-block;margin-left:-370px;')
+
+        setTimeout(function () {
+            var options = {
+                "direction": "right"
+            };
+            $("#effect").effect("slide", options, 500);
+            $("#effect-container").attr("style", "display:inline-block;background-color:#979595");
+        }, 2000);
+    });
+</script>
+        
+    <div id="container" style="height:100%;display:flex">
+        <img id="layout" src="http://emilytlam.com/ShopGenie/LayoutStatic.jpg" style="box-shadow: 2px 0px 2px 0px #817f7f;height:100vh;display:inline-block;margin-left:-370px;">
+        <div id="effect-container" style="display:inline-block;"> 
+            <img id="effect" src="https://emilytlam.com/ShopGenie/HeadphonesRight2.jpg" style="margin: 0 auto;height:100vh">
+        </div>
+    
     </div>
 </body>
 
