@@ -18,7 +18,7 @@
   <![endif]-->
 </head>
 
-<body style="margin:0">
+<body style="margin:0;background-color:#173147;position:relative">
 <script>
     $(document).ready(function () {
         var title = $("iframe#ytplayer").attr("src");
@@ -27,10 +27,12 @@ title.replace("autoplay=0", "autoplay=1");
 </script>
         
     <div id="container" style="height: 100vh;width:100vw;margin:auto;display:flex;justify-content:center;align-items:center;box-shadow: 2px 2px 2px #ddd">
-     <div style="height:100%;width:100%;padding:20px;background-color:#f2f2f2"><iframe width="100%" height="100%" id="ytplayer" src="https://www.youtube.com/embed/WYnOjQWX72Q?version=3&vq=hd720&modestbranding=1&autohide=1&showinfo=0&controls=0&autoplay=1" frameborder="0" allowfullscreen></iframe>
-         </div>
-    
+         <img src="https://emilytlam.com/ShopGenie/ShopGenie3.jpg">
     </div>
+    <div style="position:absolute;bottom:0;right:0">
+        <img src="https://emilytlam.com/ShopGenie/sale5.png">
+    </div>
+
 </body>
 
 </html>

@@ -28,7 +28,7 @@
     }
 
     .key-benefits {
-        flex: 0 1 300px;
+        flex: 0 1 500px;
         background-color: #f8f8f8;
         padding: 20px;
         text-align: center;
@@ -53,25 +53,25 @@
 <script>
     $(document).ready(function () {
 
-            var options = {
-                "direction": "down"
-            };
+    
             $("#ratings-img").effect("slide", options, 500);
             $(".key-benefits").hide();
-            setTimeout(function(){ $(".key-benefits").effect("slide", options, 500); }, 1000)
+            setTimeout(function () { var options = {
+                "direction": "down"
+            }; $(".key-benefits").effect("slide", options, 500) }, 1000)
         });
 </script>
       
 
             <h3 style="text-align:center;margin:0 auto;font-size: 32px;">SoundSport Free Wireless Headphones</h3>
-            <div style="margin:0 auto; text-align:center;width:100%"><img id="ratings-img"  src="https://emilytlam.com/ShopGenie/ratings.jpg"></div>
+            <div style="margin:0 auto; text-align:center;width:100%"><img id="ratings-img"  src="https://emilytlam.com/ShopGenie/ratings.jpg" style="min-width:70vw"></div>
 
     <div class="wrap-below-1024" style="display: flex; flex-flow: row wrap; justify-content: center; align-content: center;">
         <div class="key-benefits">
-            <p><img class="review" src="https://emilytlam.com/ShopGenie/qc35.jpg"></p>
+            <p><img class="review" src="https://emilytlam.com/ShopGenie/qc35.jpg" style="width:40vw"></p>
         </div>
         <div class="key-benefits">
-                <p><img class="review" src="https://emilytlam.com/ShopGenie/mostcrit.jpg"></p>
+                <p><img class="review" src="https://emilytlam.com/ShopGenie/mostcrit.jpg" style="width:40vw"></p>
             </div>
     </div>
 </body>
