@@ -1,0 +1,35 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>ShopGenie</title>
+    <meta name="description" content="ShopGenie">
+    <meta name="author" content="ShopGenie">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body style="margin:0;background-color:#173147;position:relative">
+<script>
+    $(document).ready(function () {
+        var title = $("iframe#ytplayer").attr("src");
+title.replace("autoplay=0", "autoplay=1");
+    });
+</script>
+        
+    <div id="container" style="height: 100vh;width:100vw;margin:auto;display:flex;justify-content:center;align-items:center;box-shadow: 2px 2px 2px #ddd">
+         <img src="https://emilytlam.com/ShopGenie/confirmation.jpg">
+    </div>
+
+</body>
+
+</html>
